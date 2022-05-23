@@ -1,0 +1,24 @@
+{
+  "aliases": {
+    "1653297620970": {
+      "name": "认识",
+      "commandId": "obsidian-shellcommands:shell-command-3"
+    },
+    "1653297635582": {
+      "name": "不认识",
+      "commandId": "obsidian-shellcommands:shell-command-0"
+    },
+    "1653297647925": {
+      "name": "标注文章",
+      "commandId": "obsidian-shellcommands:shell-command-1"
+    },
+    "1653297655985": {
+      "name": "学习文章",
+      "commandId": "obsidian-shellcommands:shell-command-2"
+    }
+  },
+  "commandDetection": {
+    "maxTry": 5,
+    "msecOfInterval": 200
+  }
+}

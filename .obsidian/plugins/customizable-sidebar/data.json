@@ -1,0 +1,39 @@
+{
+  "sidebarCommands": [
+    {
+      "id": "obsidian-spaced-repetition:srs-note-review-open-note",
+      "name": "Spaced Repetition: Open a note for review",
+      "icon": "documents"
+    },
+    {
+      "id": "obsidian-spaced-repetition:srs-note-review-easy",
+      "name": "Spaced Repetition: Review note as easy",
+      "icon": "feather-arrow-up"
+    },
+    {
+      "id": "obsidian-spaced-repetition:srs-note-review-good",
+      "name": "Spaced Repetition: Review note as good",
+      "icon": "feather-arrow-right"
+    },
+    {
+      "id": "obsidian-spaced-repetition:srs-note-review-hard",
+      "name": "Spaced Repetition: Review note as hard",
+      "icon": "feather-arrow-down"
+    },
+    {
+      "id": "obsidian-youglish-plugin:open-youglish-modal",
+      "name": "Youglish Plugin: Say It!",
+      "icon": "audio-file"
+    }
+  ],
+  "hiddenCommands": [
+    "Open graph view",
+    "Open command palette",
+    "Open Markdown importer",
+    "Open quick switcher",
+    "Review flashcards",
+    "打开快速切换",
+    "查看关系图谱",
+    "打开 Markdown 格式转换器"
+  ]
+}

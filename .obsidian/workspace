@@ -1,0 +1,156 @@
+{
+  "main": {
+    "id": "d06beba4f83f7009",
+    "type": "split",
+    "children": [
+      {
+        "id": "b74ec696b84d3880",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "README.md.md",
+            "mode": "source",
+            "backlinks": true,
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b298091b3db61fd5",
+    "type": "split",
+    "children": [
+      {
+        "id": "d1bb3ba113b3834b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cfb3aefcda65fa58",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "d04de60e8946fba1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "deciding",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "80ea13f654a216a7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0120751c36a01a44",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Overall Words.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 394.5
+  },
+  "right": {
+    "id": "b67c2618fe5dad2d",
+    "type": "split",
+    "children": [
+      {
+        "id": "90afa43e2d8c715b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4c4bbc55c1d26cd0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "README.md.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "c872974aca1bc6bd",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "README.md.md",
+                "linksCollapsed": true,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "158ee4e48661a6b8",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "4f535a5fc9cfe59f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d3f227cfbc27f063",
+            "type": "leaf",
+            "state": {
+              "type": "dictionary-view",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 403
+  },
+  "active": "b74ec696b84d3880",
+  "lastOpenFiles": [
+    "README.md.md",
+    "Article/NCE/NCE4-01.md",
+    "Article/NCE/NCE4-44.md",
+    "Article/NCE/NCE3-60.md",
+    "Article/NCE/NCE3-40.md",
+    "Article/NCE/NCE3-38.md",
+    "Article/NCE/NCE3-34.md",
+    "Article/NCE/NCE3-33.md",
+    "Article/NCE/NCE3-24.md",
+    "Article/NCE/NCE3-21.md"
+  ]
+}

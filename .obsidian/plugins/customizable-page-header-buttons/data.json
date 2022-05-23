@@ -1,0 +1,21 @@
+{
+  "enabledButtons": [
+    {
+      "id": "obsidian-shellcommands:shell-command-1",
+      "icon": "bracket-glyph",
+      "name": "Shell commands: Execute: 标注文章",
+      "showButtons": "desktop"
+    },
+    {
+      "id": "obsidian-shellcommands:shell-command-2",
+      "icon": "box-glyph",
+      "name": "Shell commands: Execute: 学习文章",
+      "showButtons": "both"
+    }
+  ],
+  "desktop": true,
+  "titleLeft": [],
+  "titleRight": [],
+  "titleCenter": [],
+  "paneRelief": false
+}

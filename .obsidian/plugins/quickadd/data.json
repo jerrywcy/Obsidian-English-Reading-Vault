@@ -1,0 +1,58 @@
+{
+  "choices": [],
+  "macros": [
+    {
+      "name": "认识",
+      "id": "e29a0b77-c9fd-4fad-bee4-e11796aaf950",
+      "commands": [
+        {
+          "name": "Shell commands: Execute: 标注为认识",
+          "type": "Obsidian",
+          "id": "360e3f22-2057-4796-bc2d-1b96dca50c7a",
+          "commandId": "obsidian-shellcommands:shell-command-3"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "不认识",
+      "id": "e210a633-7ea0-4db3-bdf2-9b87e6dafff4",
+      "commands": [
+        {
+          "name": "Shell commands: Execute: 标注为认识",
+          "type": "Obsidian",
+          "id": "73f8d722-b578-4ad6-a829-337f77996bcf",
+          "commandId": "obsidian-shellcommands:shell-command-3"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "学习文章",
+      "id": "add8e9a0-574a-466a-825b-fbf3a6db609c",
+      "commands": [
+        {
+          "name": "Shell commands: Execute: 学习文章",
+          "type": "Obsidian",
+          "id": "77a2e24c-ce8e-4686-b913-9c2521585461",
+          "commandId": "obsidian-shellcommands:shell-command-2"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "标注文章",
+      "id": "a8ce9d0b-d639-40ec-a057-3043504c8917",
+      "commands": [
+        {
+          "name": "Shell commands: Execute: 标注文章",
+          "type": "Obsidian",
+          "id": "42b0bec4-f690-4708-b73b-778cf4efbb2b",
+          "commandId": "obsidian-shellcommands:shell-command-1"
+        }
+      ],
+      "runOnStartup": false
+    }
+  ],
+  "inputPrompt": "single-line"
+}

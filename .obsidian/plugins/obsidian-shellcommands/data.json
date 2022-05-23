@@ -1,0 +1,129 @@
+{
+  "settings_version": "0.12.0",
+  "debug": false,
+  "obsidian_command_palette_prefix": "Execute: ",
+  "preview_variables_in_command_palette": true,
+  "show_autocomplete_menu": true,
+  "working_directory": "Script",
+  "default_shells": {},
+  "error_message_duration": 20,
+  "notification_message_duration": 10,
+  "output_channel_clipboard_also_outputs_to_notification": true,
+  "enable_events": true,
+  "shell_commands": {
+    "0": {
+      "platform_specific_commands": {
+        "default": "python script.py \"{{!vault_path}}\" \"mark as unknown\" \"{{!selection}}\" \"{{!file_path:relative}}\" {{!caret_position:line}} {{!caret_position:column}}"
+      },
+      "shells": {},
+      "alias": "标注为未知",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {
+        "{{selection}}": {
+          "type": "value",
+          "value": ""
+        }
+      }
+    },
+    "1": {
+      "platform_specific_commands": {
+        "default": "python script.py \"{{!vault_path}}\" \"mark article\" \"{{!file_path:relative}}\""
+      },
+      "shells": {},
+      "alias": "标注文章",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
+    },
+    "2": {
+      "platform_specific_commands": {
+        "default": "python script.py \"{{!vault_path}}\" \"learn article\" \"{{!file_path:relative}}\""
+      },
+      "shells": {},
+      "alias": "学习文章",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
+    },
+    "3": {
+      "platform_specific_commands": {
+        "default": "python script.py \"{{!vault_path}}\" \"mark as known\" \"{{!selection}}\" \"{{!file_path:relative}}\" {{!caret_position:line}} {{!caret_position:column}}"
+      },
+      "shells": {},
+      "alias": "标注为认识",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {
+        "{{caret_position}}": {
+          "type": "value",
+          "value": ""
+        },
+        "{{selection}}": {
+          "type": "value",
+          "value": ""
+        }
+      }
+    },
+    "4": {
+      "platform_specific_commands": {
+        "default": "start cmd /C python init_database.py \"{{!vault_path}}\"",
+        "darwin": "bash init.sh \"{{!vault_path}}\"",
+        "linux": "bash init.sh \"{{!vault_path}}\""
+      },
+      "shells": {},
+      "alias": "初始化词库",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "output_channels": {
+        "stdout": "ignore",
+        "stderr": "notification"
+      },
+      "output_channel_order": "stdout-first",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [
+        {
+          "type": "prompt",
+          "enabled": false,
+          "prompt_id": ""
+        }
+      ],
+      "variable_default_values": {}
+    }
+  },
+  "prompts": [],
+  "custom_variables": []
+}

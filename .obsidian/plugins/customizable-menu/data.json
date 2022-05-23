@@ -1,0 +1,14 @@
+{
+  "menuCommands": [
+    {
+      "name": "Shell commands: Execute: 标注为认识",
+      "id": "obsidian-shellcommands:shell-command-3",
+      "icon": "checkbox-glyph"
+    },
+    {
+      "name": "Shell commands: Execute: 标注为未知",
+      "id": "obsidian-shellcommands:shell-command-0",
+      "icon": "help"
+    }
+  ]
+}

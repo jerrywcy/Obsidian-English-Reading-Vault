@@ -1,0 +1,55 @@
+{
+  "targetAttributes": [
+    "rate"
+  ],
+  "targetTags": true,
+  "presetFields": [],
+  "displayFieldsInContextMenu": true,
+  "globallyIgnoredFields": [],
+  "classFilesPath": "",
+  "getFromInlineField": true,
+  "activateSnippet": true,
+  "enableEditor": true,
+  "enableFileList": true,
+  "enableBacklinks": true,
+  "enableQuickSwitcher": true,
+  "enableSuggestor": true,
+  "selectors": [
+    {
+      "type": "attribute",
+      "name": "rate",
+      "value": "1",
+      "matchCaseSensitive": false,
+      "match": "exact",
+      "uid": "8018-f83b",
+      "selectText": true,
+      "selectAppend": true,
+      "selectPrepend": true,
+      "selectBackground": true
+    },
+    {
+      "type": "attribute",
+      "name": "rate",
+      "value": "2",
+      "matchCaseSensitive": false,
+      "match": "exact",
+      "uid": "48a4-5ae7",
+      "selectText": true,
+      "selectAppend": true,
+      "selectPrepend": true,
+      "selectBackground": true
+    },
+    {
+      "type": "attribute",
+      "name": "rate",
+      "value": "3",
+      "matchCaseSensitive": false,
+      "match": "exact",
+      "uid": "2c4d-140a",
+      "selectText": true,
+      "selectAppend": true,
+      "selectPrepend": true,
+      "selectBackground": true
+    }
+  ]
+}
