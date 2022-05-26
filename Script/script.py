@@ -88,6 +88,10 @@ def remove_links(text):
     for res in results:
         print(res,res[res.find("|")+1:res.find("]]")])
         text=text.replace(res,res[res.find("|")+1:res.find("]]")])
+    results=re.findall("\[\[[A-Za-z]*\]\]",text)
+    for res in results:
+        print(res[2:-2])
+        text=text.replace(res,res[2:-2])
     return text
 
 def remove_punctuation(text):
@@ -96,7 +100,7 @@ def remove_punctuation(text):
     :param text: the text to remove punctuation from :class: String
     :return: text after being removed punctuation from :class: String
     """
-    text=re.sub("[^A-Za-z\[\]\|\s,.]","",text)
+    text=re.sub("[^A-Za-z\[\]\|\s0-9]","",text)
     return text
 
 def get_word(file_path,line,column):
@@ -185,9 +189,9 @@ def mark_as_unknown_in_file(word,file_path):
     text=""
     with open(file_path,"r",encoding='utf-8') as f:
         text=f.read()
-        article=remove_punctuation(text)
-        article=sent_tokenize(article)
+        article=sent_tokenize(text)
         for sentence in article:
+            sentence=remove_punctuation(sentence)
             sentence=remove_links(sentence)
             if word in sentence:
                 tokens=word_tokenize(sentence)
@@ -211,10 +215,10 @@ def mark_as_known_in_file(word,file_path):
     text=""
     with open(file_path,"r",encoding='utf-8') as f:
         text=f.read()
-        article=remove_punctuation(text)
         # print(article)
-        article=sent_tokenize(article)
+        article=sent_tokenize(text)
         for sentence in article:
+            sentence=remove_punctuation(sentence)
             sentence=remove_links(sentence)
             print(sentence)
             if word in sentence:
@@ -241,10 +245,10 @@ def add_bracket(word,file_path):
     text=""
     with open(file_path,"r",encoding='utf-8') as f:
         text=" "+f.read()+" "
-        article=remove_punctuation(text)
-        article=sent_tokenize(article)
+        article=sent_tokenize(text)
         for sentence in article:
             original_sentence=sentence
+            sentence=remove_punctuation(sentence)
             sentence=remove_links(sentence)
             tokens=word_tokenize(sentence)
             tagged_sent=pos_tag(tokens,tagset='universal')
@@ -254,10 +258,13 @@ def add_bracket(word,file_path):
                 wordnet_pos = get_wordnet_pos(tag[1]) or wordnet.NOUN
                 # print(wnl.lemmatize(tag[0], pos=wordnet_pos).lower(),tag[0],wnl.lemmatize(tag[0], pos=wordnet_pos).lower()==word)
                 if word==wnl.lemmatize(tag[0], pos=wordnet_pos).lower():
+                    new_sentence=new_sentence.replace("[["+tag[0]+"]]","[["+word+"|"+tag[0]+"]]")
                     print(tag[0],word)
                     results=re.findall("[^A-Za-z\[\]\|]"+tag[0]+"[^A-Za-z\[\]\|]",original_sentence)
                     for res in results:
                         new_sentence=new_sentence.replace(res,res[0]+"[["+word+"|"+tag[0]+"]]"+res[-1])
+            print("adding bracket: "+original_sentence,new_sentence)
+            print(text.find(original_sentence))
             text=text.replace(original_sentence,new_sentence)
             # print(new_sentence)
     text=text[1:-1]
@@ -273,11 +280,10 @@ def remove_bracket(word,file_path):
     text=""
     with open(file_path,"r",encoding='utf-8') as f:
         text=" "+f.read()+" "
-        article=remove_punctuation(text)
-        print(article)
-        article=sent_tokenize(article)
+        article=sent_tokenize(text)
         for sentence in article:
             original_sentence=sentence
+            sentence=remove_punctuation(sentence)
             sentence=remove_links(sentence)
             print(sentence)
             tokens=word_tokenize(sentence)
@@ -300,9 +306,9 @@ def mark_article(file_path):
     """
     with open(file_path,"r",encoding='utf-8') as f:
         text=f.read()
-        article=remove_punctuation(text)
-        article=sent_tokenize(article)
+        article=sent_tokenize(text)
         for sentence in article:
+            sentence=remove_punctuation(sentence)
             sentence=remove_links(sentence)
             tokens=word_tokenize(sentence)
             tagged_sent=pos_tag(tokens,tagset='universal')
@@ -321,12 +327,13 @@ def learn_article(file_path):
     
     :param file_path: the path to the given document
     """
+    text=""
     with open(file_path,"r",encoding='utf-8') as f:
         text=f.read()
-        article=remove_punctuation(text)
-        article=sent_tokenize(article)
+        article=sent_tokenize(text)
         for sentence in article:
             original_sentence=sentence
+            sentence=remove_punctuation(sentence)
             sentence=remove_links(sentence)
             tokens=word_tokenize(sentence)
             tagged_sent=pos_tag(tokens,tagset='universal')
@@ -334,7 +341,8 @@ def learn_article(file_path):
             for tag in tagged_sent:
                 wordnet_pos = get_wordnet_pos(tag[1]) or wordnet.NOUN
                 word=wnl.lemmatize(tag[0], pos=wordnet_pos).lower()
-                if "[["+word+"|"+tag[0]+"]]" not in original_sentence or :
+                if "[["+word+"|"+tag[0]+"]]" not in original_sentence and \
+                    "[["+tag[0]+"]]" not in original_sentence:
                     mark_as_known(word)
                 else:
                     if mark_as_unknown(word)==1:

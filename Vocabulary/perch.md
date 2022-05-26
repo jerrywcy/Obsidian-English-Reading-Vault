@@ -3,8 +3,8 @@ tags: [review]
 rate: 1
 ---
 
-# perched
-perched /pɜ:tʃt/ /pɜrtʃt/ 
+# perch
+perch /pɜ:tʃ/ /pɜrtʃ/ 
 
 ## 动词
 
