@@ -9,11 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-<<<<<<< HEAD
-            "file": "Article/test.md",
-=======
             "file": "README.md",
->>>>>>> 679482c880e9aaa877d2088011347d4c63229f84
             "mode": "source",
             "backlinks": true,
             "source": false
@@ -93,11 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-<<<<<<< HEAD
-                "file": "Article/test.md",
-=======
                 "file": "README.md",
->>>>>>> 679482c880e9aaa877d2088011347d4c63229f84
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,11 +106,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-<<<<<<< HEAD
-                "file": "Article/test.md",
-=======
                 "file": "README.md",
->>>>>>> 679482c880e9aaa877d2088011347d4c63229f84
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -154,9 +142,8 @@
   },
   "active": "14a519181a54b99d",
   "lastOpenFiles": [
-<<<<<<< HEAD
-    "Article/test.md",
     "README.md",
+    "Article/test.md",
     "Article/NCE/NCE3-50.md",
     "Article/NCE/NCE3-47.md",
     "Article/NCE/NCE3-45.md",
@@ -165,17 +152,5 @@
     "Article/NCE/NCE3-42.md",
     "Article/NCE/NCE3-41.md",
     "Article/NCE/NCE3-40.md"
-=======
-    "README.md",
-    "Article/NCE/NCE3-34.md",
-    "Article/NCE/NCE3-33.md",
-    "Article/NCE/NCE3-24.md",
-    "Article/NCE/NCE3-21.md",
-    "Article/NCE/NCE3-14.md",
-    "Article/NCE/NCE3-45.md",
-    "Article/NCE/NCE3-44.md",
-    "Article/NCE/NCE3-47.md",
-    "Article/NCE/NCE3-42.md"
->>>>>>> 679482c880e9aaa877d2088011347d4c63229f84
   ]
 }
