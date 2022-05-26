@@ -4,5 +4,7 @@
   "newFileLocation": "folder",
   "newFileFolderPath": "Vocabulary",
   "alwaysUpdateLinks": true,
-  "attachmentFolderPath": "Assets"
+  "attachmentFolderPath": "Assets",
+  "useMarkdownLinks": true,
+  "newLinkFormat": "absolute"
 }
